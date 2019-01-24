@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dude, Where's my slice?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+  <h3>Dude, Where's My Slice?</h3>
+  <button type="button" class="btn btn-lg btn-block btn-primary">Get Started</button>
+
+  <h3> Pick your pizza dude!</h3>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+              <div class="card-header"> 
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Cheese</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Marinara Sause</li>
+                <li>Cheese</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Select</button>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Pepperoni </small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Marinara Sause</li>
+                <li>Cheese</li>
+                <li>Pepperoni</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"> Supreme </small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Marinara Sause</li>
+                <li>Cheese</li>
+                <li>Olives</li>
+                <li>Bell Peppers</li>
+                <li>Onions</li>
+                <li>Italian Sausage</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Next, Pick your size!</button>
+
+        <h3>How hungry are you?</h3>
+
+        <div class="row">
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="95" height="95" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
+              <h2>Personal</h2>
+              
+              <p><a class="btn btn-secondary" href="#" role="button">Select &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
+              <h2>Medium</h2>
+              <p><a class="btn btn-secondary" href="#" role="button">Select &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
+              <h2>Large</h2>
+              
+              <p><a class="btn btn-secondary" href="#" role="button">Select &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+      
+          <button type="button" class="btn btn-lg btn-block btn-primary">Next, Where are you?</button>
+          
+          <h3>Please select your zip code: </h3>
+          <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-lg btn-block btn-primary">See options</button>
+<h3>Here are you options:</h3>
+<p>Least expensive pizza listed first…
+    Second least…
+    Third…
+    Fourth…
+    </p>
+
+    <button type="button" class="btn btn-lg btn-block btn-primary">Now lets pay!</button>
+
+  
+          <h4 class="mb-3">Payment</h4>
+  
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Confirm Order</button>
+        </form>
+      </div>
+    </div>
+  <h3>Is this the pizza the one?</h3>
+  <p>Pizza type…
+      Pizza size…
+      Location of the pizza…
+      Display of the Name of card holder…
+      Last four of card number…
+      </p>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Place Order</button>
+
+      <h3>Your pizza order has been sent!</h3>
+      <p>Pick up your pizza at {location of desired pizza} in {estimated cook time for order}
+
+
+
+          Thank you for ordering with Dude, Where’s My Slice? 
+          </p>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Click for New Order</button>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
