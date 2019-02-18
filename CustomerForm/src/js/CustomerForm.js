@@ -13,10 +13,26 @@ const CustomerForm = (props) => {
                             placeholder: "Enter Email"
                         }),
         React.createElement('label',
-        {
-            
-        }
-        )
+                        {
+                            for:"formGroupExampleInput"
+                        },
+                        "Zip Code"),
+        React.createElement('input',
+                        {   
+                            className: "form-control",
+                            type: "zip code",
+                            id: "exampleInputzip",
+                            placeholder: "Enter Zip"
+
+                        }),
+        React.createElement('button',
+                        {
+                            className:"btn btn-primary",
+                            type: "submit", 
+                            id: "blue button",
+                            placeholder: "submit"
+                        }),
+
     ]
-    )
+    );
 };
